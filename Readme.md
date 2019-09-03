@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Дмитрий Дубинин](https://up.htmlacademy.ru/htmlcss/26/user/851577).
-* Наставник: `Максим Кузнецов`.(https://htmlacademy.ru/profile/maxkuznetsov)
+* Наставник: [Максим Кузнецов](https://htmlacademy.ru/profile/maxkuznetsov)
 
 ---
 
