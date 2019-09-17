@@ -59,19 +59,19 @@ li {
     width: 549px;
     height: 211px;
 }
-.p1 {
+.advantage--first {
     background-image: url(../img/ice-cream.svg);
     background-repeat: no-repeat;
 }
-.p2 {
+.advantage--second {
     background-image: url(../img/eco.svg);
     background-repeat: no-repeat;
 }
-.p3 {
+.advantage--third {
     background-image: url(../img/cow.svg);
     background-repeat: no-repeat;
 }
-.p4 {
+.advantage--fourth {
     background-image: url(../img/thermometer.svg);
     background-repeat: no-repeat;
 }
