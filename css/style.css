@@ -1,11 +1,9 @@
 body {
     background-color: #849d8f;
     font-family: "Roboto","Arial",sans-serif;
-    color: #ffffff;
 }
 a {
     text-decoration: none;
-    color: #ffffff;
 }
 .visually-hidden {
     position: absolute;
@@ -16,7 +14,7 @@ a {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
 img { 
   max-width: 100%;
   height: auto;    
@@ -26,6 +24,23 @@ img {
 }
 li {
     list-style: none;
+}
+.main_nav_list a {
+    color: #fefefe;
+}
+.main_nav_list_item a:hover {
+    color: #323232;
+    background-color: #f8f7f4;
+}
+.main_nav_list_item a:active {
+    color: #323232;
+    background-color: #ededed;
+}
+.subcatalog_item a:hover {
+    background-color: #fbded7;
+}
+.subcatalog_item a:active {
+    background-color: #f6b5a5;
 }
 .link {
     color: #fff;
@@ -48,7 +63,7 @@ li {
     content: "";
     width: 33px;
     height: 32px;
-    background-image: url(../img/loupe.svg); 
+    background-image: url("../img/loupe.svg"); 
     font-size: 0;
     border-radius: 33px;
     background-color: rgba(248,247,244,.2);
@@ -78,14 +93,15 @@ li {
     padding: 10px 30px 10px 40px;
     border-radius: 20px;
     background-color: rgba(248,247,244,.2);
-    position: relative
+    position: relative;
+    color: #fefefe;
 }  
 .btn_cart_empty::before {
     display: block;
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url(../img/basket.svg);
+    background-image: url("../img/basket.svg");
     position: absolute;
     top: 8px;
     left: 16px
@@ -95,7 +111,7 @@ li {
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url(../img/basket-red.svg);
+    background-image: url("../img/basket-red.svg");
     position: absolute;
     top: 8px;
     left: 16px;
@@ -106,7 +122,7 @@ li {
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url(../img/entrance.svg);
+    background-image: url("../img/entrance.svg");
     position: absolute;
     top: 8px;
     left: 16px;
@@ -135,16 +151,16 @@ li {
     background-color: #f8f7f4;
     border-radius: 15px;
 }
-.catalog_item::before {
+.hit::before {
     display: block;
     content: "";
     width: 61px;
     height: 61px;
-    background-image: url(../img/hit.svg);   
+    background-image: url("../img/hit.svg");   
     background-repeat: no-repeat;
 }
 .features {
-    background-image: url(../img/waffle.png);
+    background-image: url("../img/waffle.png");
     border-radius: 15px;
     width: 1146px;
     height: 306px;
@@ -170,7 +186,7 @@ li {
     height: 49px;
     }
 .newsblock {    
-    background-image: url(../img/strawberryfon.jpg);
+    background-image: url("../img/strawberryfon.jpg");
     border-radius: 20px;
     width: 560px;
     height: 220px;
@@ -188,11 +204,11 @@ li {
     width: 548px;
     min-height: 208px;
     padding: 5px;        
-    background-image: url(../img/pattern.png);   
+    background-image: url("../img/pattern.png");   
     background-repeat: no-repeat;
     }
 .insubscribe {
-    background-image: url(../img/inpattern.png);
+    background-image: url("../img/inpattern.png");
     width: 560px;
     height: 220px;
     background-repeat: no-repeat;
@@ -203,20 +219,20 @@ li {
     color: #999999;
 }
 .advantage--first::before {
-    background-image: url(../img/ice-cream.svg);
+    background-image: url("../img/ice-cream.svg");
     background-repeat: no-repeat;
     
 }
 .advantage--second::before {
-    background-image: url(../img/eco.svg);
+    background-image: url("../img/eco.svg");
     background-repeat: no-repeat;
 }
 .advantage--third::before {
-    background-image: url(../img/cow.svg);
+    background-image: url("../img/cow.svg");
     background-repeat: no-repeat;
 }
 .advantage--fourth::before {
-    background-image: url(../img/thermometer.svg);
+    background-image: url("../img/thermometer.svg");
     background-repeat: no-repeat;
 }
 .catalog-foto {
@@ -225,15 +241,17 @@ li {
 .total {
     text-align: right;
 }
+.promo {
+    color: #fefefe;
+}
 .promo-raspberry {
-    background-image: url(../img/raspberry.jpg);
+    background-image: url("../img/raspberry.jpg");
     width: 560px;
     height: 229px;
     border-radius: 15px;
-
 }
 .promo-chocolate {
-    background-image: url(../img/chocolate.jpg);
+    background-image: url("../img/chocolate.jpg");
     width: 560px;
     height: 229px;
     border-radius: 15px;
@@ -242,9 +260,16 @@ li {
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
+    color: #fefefe;
 }
 .catalog_item span {
-    font-size: 30px
+    font-size: 30px;
+    }
+.catalog_list span {
+    font-size: 30px;
+}
+.nav_menu a {
+    color: #fefefe;
 }
 .contacts {
     background-color:#fefefe;
@@ -290,14 +315,17 @@ li {
     background-repeat: no-repeat;
 }
 .vk {
-    background-image: url(../img/vk.svg);
+    background-image: url("../img/vk.svg");
     }
 .inst {
-    background-image: url(../img/instagram.svg);
+    background-image: url("../img/instagram.svg");
 }
 .tw {
-    background-image: url(../img/twitter.svg);
+    background-image: url("../img/twitter.svg");
     }
 .fb {
-    background-image: url(../img/fb.svg);
+    background-image: url("../img/fb.svg");
 }    
+footer a {
+    color: #fefefe;
+}
