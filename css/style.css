@@ -1,9 +1,12 @@
 body {
-    background-color: #9aaea3;
-    
+    background-color: #849d8f;
+    font-family: "Roboto","Arial",sans-serif;
+    color: #ffffff;
 }
-
-
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -18,60 +21,201 @@ img {
   max-width: 100%;
   height: auto;    
 }
+.main_nav_list_item:hover {
+    background-color: #f7f6f3;
+}
 li {
     list-style: none;
 }
-.social {  
-       
+.link {
+    color: #fff;
+    border-bottom: 1px solid #ffffff;
 }
-.tw {
+.link:hover {
+    color: #ffbc9e;
+    border-bottom: 1px solid #ffbc9e;
+}
+.registration {
+    color: #323232;
+    border-bottom: 1px solid #323232;
+}
+.registration:hover {
+    color: #e84d37;
+    border-bottom: 1px solid #e84d37;
+}
+.btn_search {
+    display: block;
+    content: "";
+    width: 33px;
+    height: 32px;
+    background-image: url(../img/loupe.svg); 
+    font-size: 0;
+    border-radius: 33px;
+    background-color: rgba(248,247,244,.2);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn {
+    border-radius: 50px;
+    background-color: #f26843;
+    border: 0;
+    color: #fefefe;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #f58669;
+}
+.btn:active {
+    background-color: #c63e2b;
+}
+.delete {
+    border: 0;
+    background-color: transparent;
+}  
+
+.btn_cart {
+    padding: 10px 30px 10px 40px;
+    border-radius: 20px;
+    background-color: rgba(248,247,244,.2);
+    position: relative
+}  
+.btn_cart_empty::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/basket.svg);
+    position: absolute;
+    top: 8px;
+    left: 16px
+    }
+.btn_cart::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/basket-red.svg);
+    position: absolute;
+    top: 8px;
+    left: 16px;
     
     }
-.vk {
-   
+.btn_login::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/entrance.svg);
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    }
+.btn_login {
+    padding: 10px 30px 10px 40px;
+    border-radius: 20px;
+    background-color: rgba(248,247,244,.2);
+    position: relative;
+    color: #fefefe;
+    font-size: 14px;
+    }
+
+.btn_login:hover {
+    color: #323232;
+    background-color: #f8f7f4;
 }
-.inst {
-    
+
+.input_field_label {
+    font-size: 0;
 }
-.fb {
-    
+.login_dialog {
+    position: absolute;
+    width: 313;
+    height: 258px;
+    background-color: #f8f7f4;
+    border-radius: 15px;
+}
+.catalog_item::before {
+    display: block;
+    content: "";
+    width: 61px;
+    height: 61px;
+    background-image: url(../img/hit.svg);   
+    background-repeat: no-repeat;
 }
 .features {
     background-image: url(../img/waffle.png);
     border-radius: 15px;
     width: 1146px;
-    height: 304;
+    height: 306px;
+}
+.advantage_name {
+    font-size: 24px;
+    font-weight: 400;
+    color: #323232;
+}
+.advantage_list {
+   column-count: 2;
+   font-size: 16px;  
+   margin: 10px;
+}
+.advantage {
+    margin: 10px;
+    color: #323232;
+}
+.advantage::before {
+    display: block;
+    content: "";
+    width: 49px;
+    height: 49px;
     }
-.newsblock {
+.newsblock {    
     background-image: url(../img/strawberryfon.jpg);
     border-radius: 20px;
     width: 560px;
     height: 220px;
+    color: #323232;
+    font-size: 16px;
+    font-weight: 400;
 }
-.subscribe {
-    background-image: url(../img/pattern.png);
+.newsblock_link {
+    color: #323232;
+    border-bottom: 1px solid #323232;
+    font-size: 24px;
+    font-weight: 700;
+}
+.subscribe {     
+    width: 548px;
+    min-height: 208px;
+    padding: 5px;        
+    background-image: url(../img/pattern.png);   
+    background-repeat: no-repeat;
+    }
+.insubscribe {
+    background-image: url(../img/inpattern.png);
     width: 560px;
     height: 220px;
+    background-repeat: no-repeat;
+    padding: 6px;
+    color: #5a5a5a;
 }
-.insubscribe {
-    margin: 5px;
-    background-image: url(../img/inpattern.png);
-    width: 549px;
-    height: 211px;
+.subscribe_email {
+    color: #999999;
 }
-.advantage--first {
+.advantage--first::before {
     background-image: url(../img/ice-cream.svg);
     background-repeat: no-repeat;
+    
 }
-.advantage--second {
+.advantage--second::before {
     background-image: url(../img/eco.svg);
     background-repeat: no-repeat;
 }
-.advantage--third {
+.advantage--third::before {
     background-image: url(../img/cow.svg);
     background-repeat: no-repeat;
 }
-.advantage--fourth {
+.advantage--fourth::before {
     background-image: url(../img/thermometer.svg);
     background-repeat: no-repeat;
 }
@@ -82,25 +226,50 @@ li {
     text-align: right;
 }
 .promo-raspberry {
-    color: white;
     background-image: url(../img/raspberry.jpg);
     width: 560px;
     height: 229px;
+    border-radius: 15px;
+
 }
 .promo-chocolate {
-    color: white;
     background-image: url(../img/chocolate.jpg);
     width: 560px;
     height: 229px;
+    border-radius: 15px;
+}
+.price {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.catalog_item span {
+    font-size: 30px
 }
 .contacts {
     background-color:#fefefe;
     width: 302px;
     height: 305px;
     border-radius: 10px;
+    color: #323232;
+    font-size: 14px;
 }
-.basket-list {
-    background-color: #f8f7f4;
+.contacts_b {
+    font-size: 18px;
+    font-weight: 700;
+}
+.form {
+    font-size: 18px;
+    font-weight: 700;
+}
+.feedback_name {
+    color: #323232;
+    font-size: 18px;
+}
+.interactive_map {
+    width: 100%;
+    height: 430px;
+
 }
 .feedback {
     background-color: #f8f7f4;
@@ -108,3 +277,27 @@ li {
     height: 400px;
     border-radius: 10px;
 }
+.close {
+    border: 0;
+    background-color: transparent;
+    }
+.social {
+    display: block;
+    font-size: 0;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+.vk {
+    background-image: url(../img/vk.svg);
+    }
+.inst {
+    background-image: url(../img/instagram.svg);
+}
+.tw {
+    background-image: url(../img/twitter.svg);
+    }
+.fb {
+    background-image: url(../img/fb.svg);
+}    
