@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="main_header">
       <img class="main_logo" src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
         <nav class="main_nav">
           <ul class="main_nav_list">
@@ -37,36 +37,37 @@
               <a href="#">О компании</a>
             </li>
           </ul>
-          <div>
-              <div>
-                <a href="#" class="btn_search">Поиск</a>
-                <div class="search_dialog">                                 
-                  <form action="https://echo.htmlacademy.ru/" method="post">
-                  <input type="search" name="search" class="search" placeholder="Что ищем?">
-                  </form>
+        </nav>
+          <div class="user_block">
+            <div class="user_block_item">
+              <button type="button" class="btn_search">Поиск</button>
+              <div class="search_dialog">                                 
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                <input type="search" name="search" class="search" placeholder="Что ищем?">
+                </form>
+              </div>
+            </div>
+            <div class="user_block_item">
+              <button type="button" class="btn_login">Вход</button>
+              <div class="login_dialog">
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="input_field_label" for="email" class="visually-hidden">Email</label>
+                  <input class="input_field" type="email" id="email" name="email" placeholder="Электронная почта">
+                   <input class="input_field" type="password" id="password" placeholder="Пароль">
+                  <label class="input_field_label" for="password" class="visually-hidden">Пароль</label>
+                   <button class="btn" type="submit">Войти</button>
+                </form>                
+                    <p>
+                      <a class="registration" href="#">Забыли пароль</a>
+                      <a class="registration" href="#">Новая регистрация</a> 
+                    </p>
                 </div>
               </div>
-              <div>
-                <button type="button" class="btn_login">Вход</button>
-                  <div class="login_dialog">
-                    <form action="https://echo.htmlacademy.ru/" method="post">
-                      <label class="input_field_label" for="email" class="visually-hidden">Email</label>
-                      <input class="input_field" type="email" id="email" name="email" placeholder="Электронная почта">
-                      <input class="input_field" type="password" id="password" placeholder="Пароль">
-                      <label class="input_field_label" for="password" class="visually-hidden">Пароль</label>
-                      <button class="btn" type="submit">Войти</button>
-                    </form>                
-                      <p>
-                        <a class="registration" href="#">Забыли пароль</a>
-                        <a class="registration" href="#">Новая регистрация</a> 
-                      </p>
-                  </div>
-              </div>
+              <div class="user_block_item">
                 <h3 class="visually-hidden">Корзина</h3>
-                  <p><a class="btn_cart_empty" href="#" class="basket">Пусто</a>
-                </p>
-            </div>
-        </nav>
+                  <button type="button" class="basket btn_cart_empty">Пусто</button>
+              </div>
+            </div>        
           <div class="header_contacts">
             <span>С 10 до 20, ежедневно</span><br>
             <span><b>8 812 450-25-25</b></span>
@@ -82,12 +83,12 @@
       <section>
         <h2 class="visually-hidden">Промо</h2>
         <ul class="promo">
-        <li class="promo-raspberry">
+        <li class="promo-raspberry prom">
           <h3 class="promo_name">Малинка даром</h3>
           <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового  варения бесплатно</p>
           <a class="btn" href="#">Хочу варенье!</a>
         </li>
-        <li class="promo-chocolate">
+        <li class="promo-chocolate prom">
           <h3 class="promo_name">Шоколад даром</h3>
           <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
           <a class="btn" href="#">Хочу шоколадки!</a>
@@ -96,7 +97,7 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Хиты</h2>
-        <ul>
+        <ul class="catalog_item">
           <li class="catalog_item hit">
             <img src="img/hit1.jpg" width="267" height="267" class="catalog-foto" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p class="price">310&#8381; <span>/кг</span></p>
@@ -174,38 +175,42 @@
       </div>
       </section>     
     </main>
-    <footer class="main-footer">
+    <footer class="main_footer">
         <h3 class="visually-hidden">Ссылки на соцсети</h3>       
         <ul class="social-list">
             <li>
-                <a href="#" class="social tw">Глейси в Твиттер</a>
-              </li>
-              <li>
-                <a href="#" class="social inst">Глейси в Инстаграм</a>
-              </li>
-              <li>
-                <a href="#" class="social fb">Глейси в Фейсбук</a>
-              </li>
-              <li>
-                <a href="#" class="social vk">Глейси в Вконтакте</a>
-              </li>
+              <a href="#" class="social tw">Глейси в Твиттер</a>
+            </li>
+            <li>
+              <a href="#" class="social inst">Глейси в Инстаграм</a>
+            </li>
+            <li>
+              <a href="#" class="social fb">Глейси в Фейсбук</a>
+            </li>
+            <li>
+              <a href="#" class="social vk">Глейси в Вконтакте</a>
+            </li>
         </ul>
         <nav>
-          <div class="info">
+          <div class="footer_info">
             <h3 class="visually-hidden">Блок информации</h3>
-            <ul>
+            <ul class="footer_info_column1">
               <li><a href="#" class="post">Для поставщиков</a></li> 
               <li><a href="#" class="opr">О производстве</a></li>
+            </ul>
+            <ul class="footer_info_column2">
               <li><a href="#" class="doc">Наши документы</a></li>
               <li><a href="#" class="eco">Экологические стандарты</a></li>
             </ul>
           </div>
         </nav>
-        <p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML academy"></a>
-        </p>
-        <p>Сделано в <a href="https://htmlacademy.ru">HTML academy </a>&copy; 2017
-        </p>       
+        <div class="copyright">
+          <p>
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML academy"></a>
+          </p>
+          <p>Сделано в <a href="https://htmlacademy.ru">HTML academy </a>&copy; 2017
+          </p>
+        </div>       
       </footer>
     </body>
   </html>
