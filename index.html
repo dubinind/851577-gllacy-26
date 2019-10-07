@@ -44,7 +44,8 @@
       </section>
       <section class="user_block">
         <div class="user_block_item">
-          <button type="button" class="btn_search">Поиск</button>
+          <button type="button" class="btn_search"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path class="svg_search" fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+            Поиск</button>
           <div class="search_dialog">
             <form action="https://echo.htmlacademy.ru/" method="post">
               <input type="search" name="search" class="search" placeholder="Что ищем?">
@@ -52,16 +53,17 @@
           </div>
         </div>
         <div class="user_block_item">
-          <button type="button" class="btn user_block__btn btn_login">Вход</button>
+          <button type="button" class="btn user_block__btn btn_login"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g class="entrance" fill="#fefefe"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+            Вход</button>
           <div class="login_dialog">
             <form action="https://echo.htmlacademy.ru/" method="post">
               <label class="input_field_label visually-hidden" for="email" >Email</label>
               <input class="input_field" type="email" id="email" name="email" placeholder="Электронная почта">
               <input class="input_field" type="password" id="password" placeholder="Пароль">
               <label class="input_field_label visually-hidden" for="password">Пароль</label>
-              <button class="btn" type="submit">Войти</button>
+              <button class="btn_enter" type="submit">Войти</button>
             </form>
-            <p>
+            <p class="reg_item">
               <a class="registration" href="#">Забыли пароль</a>
               <a class="registration" href="#">Новая регистрация</a>
             </p>
@@ -171,10 +173,11 @@
           </div>
         </div>
       </section>
-    
+    </main>
       <section class="map">
         <h3 class="visually-hidden">Карта</h3>
-        <div class="pin"><img src="../851577-gllacy-26/img/map.png" alt="Карта" width="100%" height="430px"></div>
+        <div class="map_container">
+        <img class="map_image" src="../851577-gllacy-26/img/map.png" alt="Карта" width="1200px" height="430px">
         <div class="contacts">
           <h3 class="visually-hidden">Форма для связи</h3>
           <p>Адрес главного офиса<br> и офлайн-магазина:<br>
@@ -195,8 +198,9 @@
             <button class="btn" type="submit">Отправить</button>
           </form>
         </div>
+      </div>
       </section>
-    </main>
+    
     <footer class="main_footer container">
       <h3 class="visually-hidden">Ссылки на соцсети</h3>
       <ul class="social-list">
