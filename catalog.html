@@ -13,10 +13,11 @@
 <body>
   <header class="main_header container">
     <section class="navigation_block">
+      <h2 class="visually-hidden">Блок навигации по сайту</h2>
       <a href="index.html"><img class="main_logo" src="img/logo.svg" width="154" height="64" alt="Логотип Глейси"></a>
       <nav class="main_nav">
         <ul class="main_nav_list">
-          <li class="main_nav_list_item"><a href="catalog.html">Каталог</a>
+          <li class="main_nav_list_item active_main"><a href="catalog.html">Каталог</a>
             <ul class="subcatalog">
               <li class="subcatalog_item">
                 <a href="#">Новинки</a>
@@ -54,7 +55,7 @@
           Поиск</button>
         <div class="search_dialog">
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <input type="search" name="search" class="search input_field" placeholder="Что ищем?">
+            <input type="search" name="search" id="search" class="search input_field" placeholder="Что ищем?">
             <label class="input_field_label" for="search">Что ищем?</label>
           </form>
         </div>
@@ -116,7 +117,7 @@
           <a href="#" class="btn order">Оформить</a>
         </div>
       </div>
-      </div>
+      </section>
       <div class="header_contacts">
         <span>С 10 до 20, ежедневно</span><br>
         <span><b>8 812 450-25-25</b></span>
@@ -138,10 +139,10 @@
         </ul>
       </div>
     </div>
-    <h1 class="page_name">Сливочное мороженное</h1>
+    <h2 class="page_name">Сливочное мороженное</h2>
 
     <section class="catalog">
-      <h1 class="visually-hidden">Каталог</h1>
+      <h2 class="visually-hidden">Каталог</h2>
       <ul class="catalog_list">
         <li class="catalog_item">
           <img src="img/ice-1.png" width="267" height="267" class="catalog-foto"
@@ -227,7 +228,7 @@
     </section>
     <div>
       <h3 class="visually-hidden">Страницы каталога</h3>
-      <ul class="nav_menu">
+      <ul class="paginator">
         <li><a class="nav_btn inactive" href="#"><span>&lt;</span></a></li>
         <li><a class="nav_btn active" href="#"><span>1</span></a></li>
         <li><a class="nav_btn" href="#"><span>2</span></a></li>
@@ -302,9 +303,7 @@
       <p>Сделано в <a class="link" href="https://htmlacademy.ru">HTML academy </a>&copy; 2017
       </p>
     </div>
-  </footer>
-  </div>
-  </div>
+  </footer> 
 </body>
 
 </html>
