@@ -139,8 +139,79 @@
         </ul>
       </div>
     </div>
-    <h2 class="page_name">Сливочное мороженное</h2>
-
+    <h2 class="page_name">Сливочное мороженое</h2>
+    <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
+    <div class="sort">
+        <span class="filter_section_name">Сортировка:</span>  
+      <div class="filter_section_container">
+        <select class="sort_input" id="sort_input" name="sort_input">
+        <option class="icon_down">по популярности</option>
+        <option>сначала недорогие</option>
+        <option>сначала дорогие</option>
+        <option>по жирности</option>
+      </select>
+        </div>
+    </div>
+    <div class="price_filter">
+        <span class="filter_section_name">Цена: 100 руб. - 500 руб.</span>
+          <div class="filter_section_container spec">
+            <div class="range_controls">
+              <div class="scale">
+                <div class="bar"></div> 
+              </div>
+              <div class="range_toggle range_toggle_min"></div>
+              <div class="range_toggle range_toggle_max"></div>
+            </div>
+          </div>
+      </div>
+      <div class="fat_filter">
+          <span class="filter_section_name">Жирность:</span>
+          <div class="filter_section_container">
+            <label class="filter_radio">
+              <input type="radio" name="fat" value="0">
+              <span class="radio_indicator"></span>0%
+            </label>
+            <label class="filter_radio">
+              <input type="radio" name="fat" value="<10" checked>
+              <span class="radio_indicator"></span>до 10%
+            </label>
+            <label class="filter_radio">
+              <input type="radio" name="fat" value="<30" disabled>
+              <span class="radio_indicator"></span>до 30%
+            </label>
+            <label class="filter_radio">
+              <input type="radio" name="fat" value=">30">
+              <span class="radio_indicator"></span>выше 30%
+            </label>
+          </div>
+        </div>
+        <div class="topping_filter">
+          <span class="filter_section_name">Наполнители:</span>
+          <div class="filter_section_container">
+            <label class="filter_checkbox">
+              <input type="checkbox" name="chocolate" checked>
+              <span class="checkbox_indicator"></span>шоколадные
+            </label>
+            <label class="filter_checkbox">
+              <input type="checkbox" name="sugar" checked>
+              <span class="checkbox_indicator"></span>сахарные присыпки
+            </label>
+            <label class="filter_checkbox">
+              <input type="checkbox" name="fruit">
+              <span class="checkbox_indicator"></span>фрукты
+            </label>
+            <label class="filter_checkbox">
+              <input type="checkbox" name="sirup">
+              <span class="checkbox_indicator"></span>сиропы
+            </label>
+            <label class="filter_checkbox">
+              <input type="checkbox" name="jam">
+              <span class="checkbox_indicator"></span>джемы
+            </label>
+          </div>
+        </div>
+        <button class="btn_filter" type="submit">Применить</button>
+    </form>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог</h2>
       <ul class="catalog_list">
