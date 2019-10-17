@@ -59,7 +59,9 @@ li {
 
   /* outline: 2px solid red; */
 }
-
+.main_content {
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
 .main_header {
   display: flex;
   justify-content: space-between;
@@ -88,6 +90,11 @@ li {
 
 .main_nav {
   position: relative;
+}
+
+.main_nav_list {
+  position: relative;
+  bottom: 4px;
 }
 
 .main_nav_list_item:hover .subcatalog,
@@ -212,10 +219,10 @@ li {
   padding: 9px 13px 10px 14px;
 }
 
-.active_main {
+.main_nav_list .active_main {
   background-color: #d07058;
   border-radius: 20px;
-  padding: 9px 14px 6px 14px;
+  padding: 9px 14px 10px 14px;
 }
 
 
@@ -247,7 +254,7 @@ li {
 }
 
 .link {
-  color: #ffffff;
+  color: #fff;
   border-bottom: 1px solid #ffffff;
 }
 
@@ -410,13 +417,16 @@ li {
   z-index: 3;
   top: 36px;
   right: -1px;
-  ;
   display: none;
 }
 
 .btn_login:hover~.login_dialog,
 .login_dialog:hover {
   display: block;
+}
+
+.ent {
+  padding-left: 8px;
 }
 
 .login_dialog .btn_enter {
@@ -886,14 +896,13 @@ li {
   width: 293px;
   height: 405px;
   background-color: rgba(255, 255, 255, .3);
-  z-index: 1;
+  z-index: -1;
   border-radius: 5px;
 }
 
 .catalog_item span {
   font-size: 30px;
 }
-
 
 .catalog_item h3 {
   text-align: center;
@@ -1083,11 +1092,11 @@ li {
   
 }
 
-.paginator a:hover:not(.is_active) {
+.paginator a:hover:not(.inactive) {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.paginator .paginator:active a:active {
+.paginator:active a:active {
   color: #000;
   background-color: #fff;
 }
@@ -1320,28 +1329,28 @@ footer a {
   position: absolute;
   top: 0;
   left: 29px;
-  width: 52%;
+  width: 57%;
   height: 4px;
   background-color: #fff;
 }
 
 .range_toggle {
   position: absolute;
-  top: 10px;
-  width: 4px;
-  height: 4px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
   background-color: #ababab;
-  border: 8px solid #ffffff;
+  border: 8px solid #fff;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .range_toggle_min {
-  left: 18px;
+  left: 13px;
 }
 
 .range_toggle_max {
-  right: 30px;
+  right: 45px;
 }
 .filter {
   width: 860px;
@@ -1349,7 +1358,12 @@ footer a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 26px;
+  align-items: center;
+  margin-bottom: 25px;
 }
+
+
+
 .filter input, select, option {
 	font-family: "Roboto", "Arial", sans-serif;
 }
@@ -1357,6 +1371,7 @@ footer a {
   font-size: 14px;
   line-height: 16px;
   margin-left: 15px;
+  font-weight: 500;
   color:#ffffff;
 }
 .filter_section_container {
@@ -1394,24 +1409,26 @@ footer a {
   color: #000000;
 }
 
-.sort .filter_section_container:hover .sort_input_indicator {
-  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2211%22%20height%3D%2210%22%20viewBox%3D%220%200%2011%2010%22%3E%3Cpath%20fill%3D%22%23323232%22%20d%3D%22M5.5%2010L0%200h11%22%2F%3E%3C%2Fsvg%3E);
+.sort .filter_section_container:hover .sort_input {
+  background-image: url(../img/icon-down-dir.svg);
   background-repeat: no-repeat;
   background-position: right 0 center;
 }
 
 .spec {
-  padding: 0 17px;
-  width: 185px;
+  padding: 0 21px;
+  width: 218px;
   height: 35px;
   vertical-align: middle;
 }
 
 .sort_input {
-  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2211%22%20height%3D%2210%22%20viewBox%3D%220%200%2011%2010%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M5.5%2010L0%200h11%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(../img/icon-down-dir-w.svg);
   background-repeat: no-repeat;
   background-position: right 0 center;  
 }
+
+
 .filter_radio {
   position: relative;
   padding-left: 28px;
@@ -1421,13 +1438,13 @@ footer a {
 }
 
 .filter_radio:last-child {
-  padding-right: 0
+  padding-right: 0;
 }
 
 .filter_radio:hover.filter_radio input[type=radio]:not(:disabled)+.radio_indicator {
   width: 18px;
   height: 18px;
-  border: 2px solid #fff
+  border: 2px solid #ffffff;
 }
 
 .filter_radio:hover.filter_radio input[type=radio]:not(:disabled)+.radio_indicator::before {
@@ -1539,12 +1556,14 @@ footer a {
   border: 2px solid #fff;
   width: 144px;
   height: 36px;
-  background-color: rgba(255,255,255,.2);
+  background-color: rgba(255,255,255,0.2);
   color: #fff;
   border-radius: 70px;
   cursor: pointer;
   font-size: 16px;
   line-height: 18px;
+  margin-bottom: 25px;
+  margin-top: 10px;;
   
 }
 
@@ -1558,5 +1577,9 @@ footer a {
   background-color: #eaeaea;
   -webkit-box-shadow: inset 0 2px 3px #000;
           box-shadow: inset 0 2px 3px #000;
-  border: 0f
+  border: 0;
+}
+
+.fat_filter {
+  margin-right: 0;
 }

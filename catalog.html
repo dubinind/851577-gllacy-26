@@ -61,14 +61,14 @@
         </div>
       </div>
       <div class="user_block_item">
-        <button type="button" class="btn user_block__btn btn_login"><svg xmlns="http://www.w3.org/2000/svg"
+        <button type="button" class="btn btn_login"><svg xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
             <g class="entrance" fill="#fefefe">
               <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
               <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
             </g>
           </svg>
-          Вход</button>
+          <span class="ent">Вход</span></button>
         <div class="login_dialog">
           <form action="https://echo.htmlacademy.ru/" method="post">
             <label class="input_field_label visually-hidden" for="email">Email</label>
@@ -89,10 +89,10 @@
         <div class="basket-list">
           <table>
             <tr class="cart_row">
-              <td><button class="delete" type="button"><img src="../851577-gllacy-26/img/cross-small.svg"
+              <td><button class="delete" type="button"><img src="img/cross-small.svg"
                     alt="удалить из корзины"></button>
 
-              <td><img class="cart_image1" src="../851577-gllacy-26/img/ice-1.png" alt="Пломбир с апельсиновым джемом"
+              <td><img class="cart_image1" src="img/ice-1.png" alt="Пломбир с апельсиновым джемом"
                   width="30" height="30">
               </td>
               <td class="cart_name">Пломбир с апельсиновым джемом</td>
@@ -101,10 +101,10 @@
             </tr>
             <tr class="cart_row">
               <td>
-                <button class="delete" type="button"><img src="../851577-gllacy-26/img/cross-small.svg"
+                <button class="delete" type="button"><img src="img/cross-small.svg"
                     alt="удалить из корзины"></button>
               </td>
-              <td><img class="cart_image2" src="../851577-gllacy-26/img/ice-3.png"
+              <td><img class="cart_image2" src="img/ice-3.png"
                   alt="Клубничный пломбир с присыпкой из белого шоколада" width="30" height="30"></td>
               <td class="cart_name">Клубничный пломбир с присыпкой из белого шоколада</td>
               <td class="cart_price"> 1,5 кг &times;<span>300 руб.</span> </td>
@@ -123,7 +123,7 @@
         <span><b>8 812 450-25-25</b></span>
       </div>
   </header>
-  <main class="container">
+  <main class="container main_content">
     <div class="top_main">
       <div class="breadcrumbs">
         <ul>
@@ -153,7 +153,7 @@
         </div>
     </div>
     <div class="price_filter">
-        <span class="filter_section_name">Цена: 100 руб. - 500 руб.</span>
+        <span class="filter_section_name">Цена: 100 руб. &mdash; 500 руб.</span>
           <div class="filter_section_container spec">
             <div class="range_controls">
               <div class="scale">
@@ -164,9 +164,9 @@
             </div>
           </div>
       </div>
-      <div class="fat_filter">
+      <div>
           <span class="filter_section_name">Жирность:</span>
-          <div class="filter_section_container">
+          <div class="filter_section_container fat_filter">
             <label class="filter_radio">
               <input type="radio" name="fat" value="0">
               <span class="radio_indicator"></span>0%
@@ -210,6 +210,7 @@
             </label>
           </div>
         </div>
+        
         <button class="btn_filter" type="submit">Применить</button>
     </form>
     <section class="catalog">
