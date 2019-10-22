@@ -24,7 +24,7 @@
             <ul class="main_nav_list">
               <li class="main_nav_list_item"><a href="catalog.html">Каталог</a>
                 <ul class="subcatalog">
-                  <li class="subcatalog_item">
+                  <li class="subcatalog_item subcatalog_item_new">
                     <a href="#">Новинки</a>
                   </li>
                   <li class="subcatalog_item">
@@ -74,7 +74,7 @@
                   <path
                     d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
                 </g>
-              </svg><span class="span_enter"></span>
+              </svg><span class="span_enter">
               Вход</span></button>
             <div class="login_dialog">
               <form action="https://echo.htmlacademy.ru/" method="post">
@@ -128,17 +128,17 @@
           </li>
         </ul>
       </section>
-      <main class="container">
+      <main class="container main_container">
         <section>
           <h2 class="visually-hidden">Промо</h2>
           <ul class="promo">
-            <li class="promo-raspberry prom">
+            <li class="promo-raspberry promo_item">
               <h3 class="promo_name">Малинка даром!</h3>
               <p class="promo_info">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
                 варенья бесплатно.</p>
               <a class="button btn_promo_left" href="#">Хочу варенье!</a>
             </li>
-            <li class="promo-chocolate prom">
+            <li class="promo-chocolate promo_item">
               <h3 class="promo_name">Шоколадки даром!</h3>
               <p class="promo_info">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
                 присыпки совершенно
@@ -153,28 +153,28 @@
             <li class="catalog_item hit">
               <img src="img/hit1.png" width="267" height="267" class="catalog-foto"
                 alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <p class="price">310&#8381; <span>/кг</span></p>
+              <p class="price">310<span class="ruble">&#8381;</span><span>/кг</span></p>
               <h3><a class="link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
               <a class="btn quick" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog_item hit">
               <img src="img/hit2.png" width="267" height="267" class="catalog-foto"
                 alt="Сливочно-кофейное с кусочками шоколада">
-              <p class="price">380&#8381; <span>/кг</span></p>
+              <p class="price">380<span class="ruble">&#8381;</span><span>/кг</span></p>
               <h3><a class="link" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
               <a class="btn quick" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog_item hit">
               <img src="img/hit3.png" width="267" height="267" class="catalog-foto"
                 alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <p class="price">355&#8381; <span>/кг</span></p>
+              <p class="price">355<span class="ruble">&#8381;</span><span>/кг</span></p>
               <h3><a class="link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
               <a class="btn quick" href="#">Быстрый просмотр</a>
             </li>
             <li class="catalog_item hit">
               <img src="img/hit4.png" width="267" height="267" class="catalog-foto"
                 alt="Сливочное крем-брюле с карамельной подливкой">
-              <p class="price">415&#8381; <span>/кг</span></p>
+              <p class="price">415<span class="ruble">&#8381;</span><span>/кг</span></p>
               <h3><a class="link" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
               <a class="btn quick" href="#">Быстрый просмотр</a>
             </li>
@@ -197,7 +197,7 @@
             </li>
             <li class="advantage advantage--fourth">Доставка нашего мороженого до заказчиков осуществляется в
               специальном
-              термопакете, который не дает мороженному растаять в пути и позволяет ему сохранить свой превосходный вкус.
+              термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
             </li>
           </ul>
         </section>
@@ -210,7 +210,7 @@
             <div class="insubscribe">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
                 происходит.
-                Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+                Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form action="https://echo.htmlacademy.ru" method="post">
                 <input class="input_field" type="email" id="subscribe_email" name="subscribe_email"
                   placeholder="email@example.com">
@@ -224,13 +224,15 @@
       <section class="map">
         <h3 class="visually-hidden">Карта</h3>
         <div class="map_container">
-          <img class="map_image" src="../851577-gllacy-26/img/map.png" alt="Карта" width="1200" height="430">
-          <div class="contacts">
+          <!-- <img class="map_image" src="../851577-gllacy-26/img/map.png" alt="Карта" width="1200" height="430"> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018931431147!2d30.322306390909716!3d59.938716497922556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1571758164648!5m2!1sru!2sru" width="1200" height="430"  style="border:0;" allowfullscreen=""></iframe>          <div class="contacts">
             <h3 class="visually-hidden">Форма для связи</h3>
-            <p>Адрес главного офиса<br> и офлайн-магазина:<br>
-              <span class="contacts_b">ул.Большая Конюшенная<br>
-                19/8, Санкт-Петербург</span></p>
-            <p>Для заказов по телефону:<br>
+              <p class="adress">Адрес главного офиса<br> 
+                и офлайн-магазина:<br>
+                <span class="contacts_b">ул. Большая Конюшенная<br>
+                19/8, Санкт-Петербург</span>
+              </p>
+            <p class="number">Для заказов по телефону:<br>
               <span class="contacts_b">8 812 450-25-25</span><br>
               (с 10 до 20 ежедневно)</p>
             <button class="button btn_forma">Форма обратной связи</button>
@@ -242,13 +244,13 @@
         <form action="https://echo.htmlacademy.ru/" method="post">
           <button type="button" class="close"><img src="../851577-gllacy-26/img/cross-big.svg"
               alt="Закрыть форму связи"></button>
-          <input type="text" name="name" id="text" class="feedback_name input_field" placeholder="Как вас зовут?">
-          <label class="input_field_label visually-hidden" for="text">Как вас зовут</label><br>
+          <input type="text" name="name" id="name" class="feedback_name input_field" placeholder="Как вас зовут?">
+          <label class="input_field_label visually-hidden" for="name">Как вас зовут</label><br>
           <input type="email" class="feedback_email input_field" name="email" placeholder="Ваша почта для ответа?">
           <label class="input_field_label visually-hidden"  for="email">Ваша почта для ответа?</label><br>
           <textarea class="feedback_text input_field" rows="4" placeholder="Напишите что-нибудь..."></textarea>
           <label class="input_field_label visually-hidden">Напишите что-нибудь...</label><br>
-          <button class="btn feedback_btn" type="submit">Отправить</button>
+          <button class="button feedback_btn" type="submit">Отправить</button>
         </form>
       </div>
     
@@ -312,74 +314,13 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39"
               alt="HTML academy"></a>
         </p>
-        <p>Сделано в <a class="link" href="https://htmlacademy.ru">HTML academy </a>&copy; 2017
+        <p>Сделано в <a class="link" href="https://htmlacademy.ru">HTML academy </a>&copy; 2019
         </p>
       </div>
     </footer>
   </div>
   </div>
-  <script>
-      var link = document.querySelector(".btn_forma");
-
-      var popup = document.querySelector(".feedback");
-      var close = popup.querySelector(".close");
-
-      var form = popup.querySelector("form");
-      var name = popup.querySelector(".feedback_name");
-      var email = popup.querySelector("feedback_email");
-
-      var isStorageSupport = true;
-      var storage = "";
-  
-      try {
-      storage = localStorage.getItem("name");
-    } catch (err) {
-      isStorageSupport = false;
-    }
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-      
-      if (storage) {
-      name.value = storage;
-      email.focus();
-        } else {
-          name.focus();
-        }     
-      });
-      
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      });       
-         
-      form.addEventListener("submit", function (evt) {
-        if (!name.value || !email.value) {
-          evt.preventDefault()
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-          
-         } else {
-            if (isStorageSupport) {}
-          localStorage.setItem("name", name.value);
-        }
-        
-      });
-
-      window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
-    }
-  });
-      
-    </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
