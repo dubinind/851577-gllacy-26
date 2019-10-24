@@ -683,7 +683,6 @@ li {
 .promo a {
  align-self: flex-end;
  margin: 0;
-
 }
 
 .btn_promo_left {
@@ -1025,7 +1024,7 @@ li {
   padding: 10px 17px;
 }
 
-.catalog_item:hover {
+.catalog_item:hover, .catalog_item:focus, {
   z-index: 3;
 }
 
@@ -1038,7 +1037,7 @@ li {
 /* .catalog_item:focus .quick,
 .quick:focus */
 
-.catalog_item:hover::after, .catalog_item:focus::after {
+.catalog_item:hover::after, .catalog_item:focus::after, .catalog_item link:focus::after {
   content: "";
   position: absolute;
   top: -1.3%;
