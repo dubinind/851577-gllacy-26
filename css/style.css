@@ -1084,10 +1084,13 @@ li {
   padding: 27px 25px 28px 25px;
 }
 
+.adress {
+  width: 148px ;
+}
+
 .contacts p {
   font-size: 14px;
   line-height: 20px;
-  /* margin-bottom: -1px; */
 }
 
 .contacts .contacts_b {
@@ -1096,10 +1099,14 @@ li {
   line-height: 24px;
   font-weight: 700;
   margin-top: 4px;
+  width: 221px;
 }
 
 .number {
   margin-top: 16px;
+}
+.number .contacts_b {
+  width: 238px;
 }
 
 .btn_subsribe {
