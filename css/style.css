@@ -7,6 +7,7 @@
 
 body {
   background-color: #849d8f;
+  background: linear-gradient(to bottom,#9db1a5 0%,#849d8f 100%);
   font-family: "Roboto", "Arial", sans-serif;
 }
 
@@ -110,7 +111,7 @@ li {
 
 .main_nav_list {
   position: relative;
-  margin-top: -7px;
+  margin-top: -4px;
 }
 
 .main_nav_list_item:hover .subcatalog,
@@ -212,7 +213,7 @@ li {
 
 .user_block_item {
   position: relative;
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .header_contacts {
@@ -223,8 +224,16 @@ li {
   line-height: 16px;
   font-weight: 700;
   text-align: right;
-  bottom: -40px;
+  bottom: -38px;
   right: 27px;
+}
+
+.header_contacts span:first-child {
+  width: 152px;
+}
+
+.contacts_index {
+  bottom: -42px;
 }
 
 .header_contacts b {
@@ -393,7 +402,8 @@ li {
   color: #323232;
   font-size: 14px;
   line-height: 16px;
-  padding: 9px 17px 9px 44px;
+  padding: 7px 17px 9px 44px;
+  margin-left: -2px;
 }
 
 .btn_cart:hover~.basket-list,
@@ -408,7 +418,7 @@ li {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-  padding: 7px 17px 9px 45px;
+  padding: 7px 17px 9px 44px;
 }
 
 .btn_cart_empty::before {
@@ -665,6 +675,8 @@ li {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-top: 41px;
+  margin-bottom: 39px;
+  
 }
 
 .promo .button {
@@ -704,10 +716,11 @@ li {
   width: 560px;
   min-height: 229px;
   border-radius: 15px;
+  margin-right: 26px;
 }
 
 .promo_item {
-  padding: 15px 18px;
+  padding: 14px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -744,6 +757,7 @@ li {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+  margin-top: -2px;
   padding: 24px 20px 26px 20px;
 }
 
@@ -754,7 +768,7 @@ li {
   font-weight: 500;
   text-align: left;
   color: #323232;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
 }
 
 .advantage_list {
@@ -774,7 +788,7 @@ li {
 
 .advantage--first {
   order: 1;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   margin-right: 29px;
 }
 
@@ -830,7 +844,7 @@ li {
 .newsblock {
   background-color: #ffffff;
   background-image: url("../img/strawberryfon.jpg");
-  border-radius: 20px;
+  border-radius: 14px;
   width: 560px;
   min-height: 220px;
   color: #323232;
@@ -883,7 +897,7 @@ li {
   background-color: #f8f7f4;
   background-image: url("../img/pattern.png");
   background-repeat: no-repeat;
-  border-radius: 10px;
+  border-radius: 14px;
   padding: 12px;
 }
 
@@ -1063,17 +1077,17 @@ li {
   position: absolute;
   background-color: #fefefe;
   width: 302px;
-  border-radius: 10px;
+  border-radius: 15px;
   color: #323232;
   bottom: 62px;
   left: calc(50% + 271px);
-  padding: 26px 25px;
+  padding: 27px 25px 28px 25px;
 }
 
 .contacts p {
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 2px;
+  /* margin-bottom: -1px; */
 }
 
 .contacts .contacts_b {
@@ -1081,7 +1095,7 @@ li {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
 .number {
@@ -1092,9 +1106,9 @@ li {
   padding: 0 18px;
 }
 
-.btn_forma {
-  padding: 13px 27px;
-  margin-top: 23px
+.btn_form {
+  padding: 9px 27px;
+  margin: 27px 0 4px 0;
 }
 
 .feedback h3 {
@@ -1144,14 +1158,16 @@ li {
   width: 267px;
   height: 44px;
   margin-left: 26px;
+  margin-bottom: 20px;
 
 }
 
 .feedback_text {
-  height: 155px;
+  height: 129px;
   width: 428px;
   margin-left: 26px;
   padding: 13px 14px;
+  margin-bottom: 25px;
 }
 
 .feedback_text:hover,
@@ -1172,12 +1188,17 @@ li {
   display: -ms-flexbox;
   display: flex;
   height: 430px;
-  margin-top: 40px;
+  margin-top: 38px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
+  margin-bottom: 1px;;
 }
+iframe {
+  width: 100%; 
+  height: 430px;
+} 
 
 .map_container {
   position: relative;
@@ -1438,9 +1459,8 @@ footer a {
 
 .slide-title {
   width: 700px;
-  margin: 8px auto;
+  margin: -1px auto;
   margin-bottom: 37px;
-
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;

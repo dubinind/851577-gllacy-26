@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">  
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic"
     rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -95,8 +95,8 @@
             <button type="button" class="btn user_block__btn btn_cart_empty">Пусто</button>
           </div>
         </section>
-        <div class="header_contacts">
-          <span>С 10 до 20, ежедневно</span><br>
+        <div class="header_contacts contacts_index">
+          <span>С 10 до 20, ежедневно</span>
           <span><b>8 812 450-25-25</b></span>
         </div>
       </header>
@@ -224,8 +224,7 @@
       <section class="map">
         <h3 class="visually-hidden">Карта</h3>
         <div class="map_container">
-          <!-- <img class="map_image" src="../851577-gllacy-26/img/map.png" alt="Карта" width="1200" height="430"> -->
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad30570d116881135a136dfda7dced6d20a2a1f3ffd97e641ac641db64ecdf01e&amp;source=constructor" width="100%" height="430"></iframe>         
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad30570d116881135a136dfda7dced6d20a2a1f3ffd97e641ac641db64ecdf01e&amp;source=constructor"></iframe>         
           <div class="contacts">
             <h3 class="visually-hidden">Форма для связи</h3>
               <p class="adress">Адрес главного офиса<br> 
@@ -236,7 +235,7 @@
             <p class="number">Для заказов по телефону:<br>
               <span class="contacts_b">8 812 450-25-25</span><br>
               (с 10 до 20 ежедневно)</p>
-            <button class="button btn_forma">Форма обратной связи</button>
+            <button class="button btn_form">Форма обратной связи</button>
           </div>
         </div>
         </section>
@@ -246,11 +245,11 @@
           <button type="button" class="close"><img src="img/cross-big.svg"
               alt="Закрыть форму связи"></button>
           <input type="text" name="name" id="name" class="feedback_name input_field" placeholder="Как вас зовут?">
-          <label class="input_field_label visually-hidden" for="name">Как вас зовут</label><br>
+          <label class="input_field_label visually-hidden" for="name">Как вас зовут</label>
           <input type="email" class="feedback_email input_field" name="email" placeholder="Ваша почта для ответа?">
-          <label class="input_field_label visually-hidden"  for="email">Ваша почта для ответа?</label><br>
+          <label class="input_field_label visually-hidden"  for="email">Ваша почта для ответа?</label>
           <textarea class="feedback_text input_field" rows="4" placeholder="Напишите что-нибудь..."></textarea>
-          <label class="input_field_label visually-hidden">Напишите что-нибудь...</label><br>
+          <label class="input_field_label visually-hidden">Напишите что-нибудь...</label>
           <button class="button feedback_btn" type="submit">Отправить</button>
         </form>
       </div>
