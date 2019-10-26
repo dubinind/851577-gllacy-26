@@ -816,6 +816,7 @@ li {
 
 .advantage--fourth::before {
   background-image: url("../img/thermometer.svg");
+  
 }
 
 .news {
@@ -836,6 +837,7 @@ li {
   font-size: 16px;
   font-weight: 400;
   margin-right: 26px;
+  
 }
 
 .newsblock h3 {
@@ -990,7 +992,7 @@ li {
   align-items: center;
   position: relative;
   width: 267px;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .catalog_item .ruble {
@@ -1043,8 +1045,8 @@ li {
   width: 258px;
   text-align: center;
   font-size: 16px;
-  padding-top: 12px;
-  line-height: 23px;
+  padding-top: 13px;
+  line-height: 22px;
 }
 
 .contacts {
@@ -1202,7 +1204,7 @@ li {
 
 .paginator {
   width: 100%;
-  margin-top: 44px;
+  margin-top: 40px;
   margin-bottom: 29px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1215,16 +1217,51 @@ li {
 .paginator a {
   display: inline-block;
   vertical-align: top;
-  width: 27px;
+  width: 26px;
   height: 26px;
   color: #fff;
   text-align: center;
   border-radius: 26px;
-  padding-top: 3px;
+  padding-top: 2px;
   cursor: pointer;
   font-size: 16px;
   line-height: 18px;
+}
 
+a .arrow {  
+  color: transparent;
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 12px;
+  background-position: 1px 4px;
+  margin-left: 17px;
+  display: block;
+}
+
+.nav_btn .rotated {    
+  transform: rotate(180deg);
+  background-position: 1px 1px;
+  margin-right: 1px;
+}
+
+.paginator li:nth-child(2) {
+  padding-left: 14px;
+}
+
+.paginator li:nth-child(3) {
+  padding-left: 3px;
+}
+
+.paginator li:nth-child(4) {
+  padding-left: 3px;
+}
+
+.paginator li:nth-child(5) {
+  padding-left: 2px;
+}
+
+.paginator li:nth-child(6) {
+  padding-left: 3px;
 }
 
 .paginator span {
@@ -1233,6 +1270,7 @@ li {
 
 .inactive {
   opacity: 0.2;
+  
 }
 
 .paginator .active {
@@ -1352,7 +1390,7 @@ footer a {
 
 .copyright p {
   font-size: 12px;
-  margin-top: 4px;
+  margin-top: 5px;
 }
 
 .site-wrapper {
