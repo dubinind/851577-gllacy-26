@@ -1,4 +1,4 @@
-var link = document.querySelector(".btn_forma");
+var link = document.querySelector(".btn_form");
 
 var popup = document.querySelector(".feedback");
 var close = popup.querySelector(".close");

@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic"
     rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body>
@@ -69,7 +69,7 @@
             <button type="button" class="btn user_block__btn btn_login"><svg class="svg_enter"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19"
                 viewBox="0 0 21 19">
-                <g class="entrance" fill="#fefefe">
+                <g class="login_fill" fill="#fefefe">
                   <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
                   <path
                     d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
@@ -92,12 +92,13 @@
           </div>
           <div class="user_block_item">
             <h3 class="visually-hidden">Корзина</h3>
-            <button type="button" class="btn user_block__btn btn_cart_empty">Пусто</button>
+            <button type="button" class="btn user_block__btn btn_cart_empty"><span
+                class="span_basket">Пусто</span></button>
           </div>
         </section>
         <div class="header_contacts contacts_index">
           <span>С 10 до 20, ежедневно</span>
-          <span><b>8 812 450-25-25</b></span>
+          <a href="tel:+88124502525">8 812 450-25-25</a>
         </div>
       </header>
       <h2 class="visually-hidden">Магазин</h2>
@@ -129,7 +130,7 @@
         </ul>
       </section>
       <main class="container main_container">
-        <section>
+        <section class="promo_section">
           <h2 class="visually-hidden">Промо</h2>
           <ul class="promo">
             <li class="promo-raspberry promo_item">
@@ -187,12 +188,12 @@
             <li class="advantage advantage--first">Все наше мороженое изготавливается на собственном производстве, с
               использованием современного оборудования и проверенных временем технологий.
             </li>
-            <li class="advantage advantage--second">Для приготовления мороженого используются настоящие сливки и молоко
+            <li class="advantage advantage--second">Закупка ингредиентов производится только у проверенных фермерских
+              хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+            </li>
+            <li class="advantage advantage--third">Для приготовления мороженого используются настоящие сливки и молоко
               высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически
               чистого сырья.
-            </li>
-            <li class="advantage advantage--third">Закупка ингредиентов производится только у проверенных фермерских
-              хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
             </li>
             <li class="advantage advantage--fourth">Доставка нашего мороженого до заказчиков осуществляется в
               специальном
@@ -201,12 +202,12 @@
           </ul>
         </section>
         <section class="news">
-          <div class="newsblock">
+          <div class="newsblock newsblock_item">
             <h3>Новое в нашем блоге</h3>
             <a class="newsblock_link" href="#"><span>10 способов сервировки фруктовых щербетов к столу</span></a>
           </div>
           <div class="subscribe">
-            <div class="insubscribe">
+            <div class="insubscribe newsblock_item">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
                 происходит.
                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
@@ -234,7 +235,7 @@
               19/8, Санкт-Петербург</span>
           </p>
           <p class="number">Для заказов по телефону:
-            <span class="contacts_b">8 812 450-25-25</span>
+            <a href="tel:+88124502525" class="contacts_b">8 812 450-25-25</a>
             (с 10 до 20 ежедневно)</p>
           <button class="button btn_form">Форма обратной связи</button>
         </div>

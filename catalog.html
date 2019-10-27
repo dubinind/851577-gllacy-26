@@ -7,23 +7,24 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic"
     rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body>
   <header class="main_header container">
     <section class="navigation_block">
       <h2 class="visually-hidden">Блок навигации по сайту</h2>
-      <a href="index.html"><img class="main_logo" src="img/logo.svg" width="154" height="64" alt="Логотип Глейси"></a>
+      <a href="index.html"><img class="main_logo logo_catalog" src="img/logo.svg" width="154" height="64"
+          alt="Логотип Глейси"></a>
       <nav class="main_nav">
         <ul class="main_nav_list">
-          <li class="main_nav_list_item active_main"><a href="catalog.html">Каталог</a>
+          <li class="main_nav_list_item active_main"><a href="#">Каталог</a>
             <ul class="subcatalog">
               <li class="subcatalog_item">
                 <a href="#">Новинки</a>
               </li>
               <li class="subcatalog_item current_page">
-                <a href="catalog.html">Сливочное</a>
+                <a>Сливочное</a>
               </li>
               <li class="subcatalog_item">
                 <a href="#">Щербеты</a>
@@ -63,7 +64,7 @@
       <div class="user_block_item">
         <button type="button" class="btn btn_login"><svg xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
-            <g class="entrance" fill="#fefefe">
+            <g class="login_fill" fill="#fefefe">
               <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
               <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
             </g>
@@ -118,7 +119,7 @@
     </section>
     <div class="header_contacts">
       <span>С 10 до 20, ежедневно</span>
-      <span><b>8 812 450-25-25</b></span>
+      <a href="tel:+88124502525">8 812 450-25-25</a>
     </div>
   </header>
   <main class="container main_border main_container">
