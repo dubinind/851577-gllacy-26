@@ -51,6 +51,8 @@ img {
   border-radius: 5px;
   border: 1px solid #d3d3d2;
   padding: 0 14px;
+  line-height: 24px;
+  font-size: 16px;
 }
 
 .input_field:focus {
@@ -159,9 +161,23 @@ img {
   border-radius: 5px;
 }
 
+.subcatalog::before {
+  content: "  ";
+    display: block;
+    height: 15px;
+    width: 150px;
+    position: absolute;
+    top: -10px;
+}
+
 .subcatalog_item:first-child {
   position: relative;
   border-radius: 5px 5px 0 0;
+
+}
+
+.subcatalog_item_new {
+  font-weight: 700;
 }
 
 .subcatalog_item_new:first-child::after {
@@ -196,6 +212,7 @@ img {
   display: block;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 400;
   color: #323232;
   padding: 0;
   margin: 0;
@@ -260,8 +277,7 @@ img {
 
 .contacts_index {
   bottom: -44px;
-  z-index: 50;
-}
+  }
 
 .header_contacts a {
   font-size: 22px;
@@ -280,6 +296,7 @@ img {
   font-family: inherit;
   background-color: transparent;
   font-size: 16px;
+  line-height: 18px;
   font-weight: 700;
   padding: 5px 13px 8px 14px;
 }
@@ -354,6 +371,8 @@ img {
   width: max-content;
   color: #323232;
   border-bottom: 1px solid #323232;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .registration:hover {
@@ -386,7 +405,16 @@ img {
   border-radius: 5px;
   top: 37px;
   right: 0;
+}
 
+.search_dialog::before {
+  content: "  ";
+  display: block;
+  height: 15px;
+  width: 150px;
+  position: absolute;
+  right: 0;
+  top: -10px;
 }
 
 .search {
@@ -505,12 +533,22 @@ img {
   padding: 6px 17px 7px 16px;
 }
 
+.login_dialog::before {
+  content: "  ";
+  display: block;
+  height: 15px;
+  width: 150px;
+  position: absolute;
+  right: 0;
+  top: -10px
+}
+
 .login_dialog {
   position: absolute;
   width: 277px;
   height: 214px;
   background-color: #f8f7f4;
-  border-radius: 15px;
+  border-radius: 5px;
   z-index: 3;
   top: 36px;
   right: -1px;
@@ -528,6 +566,9 @@ img {
 
 .span_enter {
   padding-left: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .login_dialog .btn_enter {
@@ -558,6 +599,8 @@ img {
   width: 239px;
   height: 42px;
   margin: 20px 17px 0 19px;
+  font-size: 14px;
+  line-height: 24px;  
 }
 
 
@@ -598,9 +641,7 @@ img {
 .delete {
   border: 0;
   background-color: transparent;
-  /* width: 14px;
-  height: 14px;
-  margin-right: 9px; */
+  
 
 }
 
@@ -691,6 +732,7 @@ img {
 .page_name {
   width: auto;
   font-size: 35px;
+  line-height: 41px;
   font-weight: 700;
   margin-top: 4px;
   margin-bottom: 23px;
@@ -702,8 +744,8 @@ img {
 }
 
 .promo_section ul,
-p,
-h3 {
+.promo_section p,
+.promo_section h3 {
   padding: 0;
   margin: 0;
 }
@@ -742,16 +784,17 @@ h3 {
 
 .promo_name {
   font-size: 35px;
+  line-height: 41px;
   font-weight: 700;
 }
 
-.promo_info {
+.promo_item .promo_info {
   max-width: 514px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
 
-  margin: 14px 0 45px 0;
+  margin: 16px 0 45px 0;
 }
 
 .promo-raspberry {
@@ -902,6 +945,12 @@ h3 {
   justify-content: space-between;
 }
 
+.news p,
+.news h3 {
+  padding: 0;
+  margin: 0;
+}
+
 .newsblock_item:nth-of-type(n+3) {
   margin-top: 10px;
 
@@ -910,6 +959,7 @@ h3 {
 .newsblock {
   background-color: #ffffff;
   background-image: url("../img/strawberryfon.jpg");
+  background-repeat: no-repeat;
   border-radius: 14px;
   width: 560px;
   min-height: 220px;
@@ -955,31 +1005,40 @@ h3 {
 }
 
 .subscribe {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 560px;
-  min-height: 220px;
-  background-color: #f8f7f4;
+  min-height: 208px;
   background-image: url("../img/pattern.png");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 14px;
-  padding: 12px;
+  padding: 5px;
 }
 
 .insubscribe {
-  background-image: url("../img/inpattern.png");
-  width: 548px;
+  background-color: #f8f7f4;
   min-height: 210px;
   background-repeat: no-repeat;
   color: #5a5a5a;
-  position: absolute;
-  top: 4px;
-  right: 6px;
-  padding-top: 30px;
-  padding-left: 20px;
-  ;
+  padding: 29px 21px 0 20px;
+  border-radius: 14px;  
 }
 
+/* .insubscribe {
+  width: 550px;
+  min-height: 208px;
+  background-color: #f8f7f4;
+  border-radius: 14px;
+  border-width: 5px;
+  border-image-source: url("../img/pattern.png");
+  color: #5a5a5a;
+  padding: 29px 21px 0 20px;
+} */
+
 .insubscribe p {
+  margin: 0 0 35px;
   width: 506px;
   font-size: 16px;
   line-height: 22px;
@@ -990,8 +1049,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  top: 36px;
+  
 
 }
 
@@ -1026,6 +1084,11 @@ h3 {
 
 .catalog {
   margin-top: 25px;
+}
+
+.catalog_item p, h3 {
+  margin: 0;
+  
 }
 
 .price {
@@ -1157,7 +1220,7 @@ h3 {
 
 .contacts p {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .contacts .contacts_b {
@@ -1165,13 +1228,14 @@ h3 {
   vertical-align: center;
   color: #000;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 22px;
   font-weight: 700;
   margin-top: 4px;
-  width: 221px;
+  width: 222px;
 }
 
 .number {
+  width: 176px;
   margin-top: 16px;
 }
 
@@ -1271,20 +1335,23 @@ h3 {
   justify-content: center;
   position: relative;
   margin-bottom: 1px;
-  ;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-iframe {
+.iframe_map {
   width: 100%;
   height: 430px;
   border: 0;
+  
 }
 
 .map_container {
   position: relative;
   width: 100%;
+  
 }
-
 
 .social:hover,
 .social:active {
@@ -1411,6 +1478,7 @@ footer a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-left: 1px;
+  margin-right: auto;
   margin-top: 4px;
   width: 185px;
 }
@@ -1426,6 +1494,7 @@ footer a {
   background-repeat: no-repeat;
   border: 3px solid #c2cec7;
 
+
 }
 
 .social-list li:nth-of-type(n+5) {
@@ -1438,7 +1507,7 @@ footer a {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1471,6 +1540,7 @@ footer a {
 
 .footer_info {
   font-size: 13px;
+  line-height: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1500,6 +1570,7 @@ footer a {
   flex-direction: column;
 }
 
+
 .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1509,12 +1580,14 @@ footer a {
   -ms-flex-direction: column;
   flex-direction: column;
   color: #fefefe;
-  margin-top: -13px;
+  margin-top: 17px;
+  margin-left: auto;
 }
 
 .copyright p {
   font-size: 12px;
-  margin-top: 5px;
+  line-height: 18px;
+  margin-top: -12px;
 }
 
 .site-wrapper {
@@ -1565,8 +1638,8 @@ footer a {
   margin: -1px auto;
   margin-bottom: 37px;
   font-size: 60px;
-  line-height: 60px;
-  font-weight: 800;
+  line-height: 60.35px;
+  font-weight: 700;
 }
 
 .button {
@@ -1596,6 +1669,8 @@ footer a {
   font-size: 32px;
   line-height: 44px;
 }
+
+
 
 .button:hover {
   background: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
@@ -1628,12 +1703,14 @@ footer a {
   width: 21px;
   height: 21px;
   margin-right: 8px;
-
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-controls label:hover {
+  background-color: #b2c1b7;
 }
 
 #product-1:checked~.site-wrapper {
@@ -1780,20 +1857,22 @@ option {
   position: relative;
 }
 
+.sort_input::-ms-expand {
+  display: none;
+}
+
 .sort .filter_section_container {
   padding-right: 14px;
 }
 
-.sort .filter_section_container:hover {
-  background-color: #ffffff;
-}
+
 
 .sort .filter_section_container:hover .sort_input {
   color: #000000;
 }
 
 .sort .filter_section_container:hover .sort_input {
-  background-image: url(../img/icon-down-dir.svg);
+  background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-position: right 0 center;
 }
@@ -1816,13 +1895,18 @@ option {
   padding-left: 47px;
   cursor: pointer;
   color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .fat_list li:nth-child(n+2) {
   padding-left: 3px;
 }
 
-
+.filter-input-radio+label::before:disabled, .filter-input-radio+label::before:disabled {
+  opacity: 0.4;
+}
 
 .fat_list {
   display: -webkit-box;
@@ -1955,7 +2039,7 @@ option {
   font-size: 16px;
   line-height: 18px;
   margin-top: 9px;
-
+  font-weight: 500;
 
 }
 

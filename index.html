@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap&subset=cyrillic"
     rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -225,7 +225,7 @@
     <section class="map">
       <h3 class="visually-hidden">Карта</h3>
       <div class="map_container">
-        <iframe
+        <iframe class="iframe_map"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad30570d116881135a136dfda7dced6d20a2a1f3ffd97e641ac641db64ecdf01e&amp;source=constructor"></iframe>
         <div class="contacts">
           <h3 class="visually-hidden">Форма для связи</h3>
@@ -237,20 +237,20 @@
           <p class="number">Для заказов по телефону:
             <a href="tel:+88124502525" class="contacts_b">8 812 450-25-25</a>
             (с 10 до 20 ежедневно)</p>
-          <button class="button btn_form">Форма обратной связи</button>
+          <a class="button btn_form" href="/writeus">Форма обратной связи</a>
         </div>
       </div>
     </section>
     <div class="feedback">
       <h3>Мы обязательно вам ответим!</h3>
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <button type="button" class="close"><img src="img/cross-big.svg" alt="Закрыть форму связи"></button>
-        <input type="text" name="name" id="name" class="feedback_name input_field" placeholder="Как вас зовут?">
-        <label class="input_field_label visually-hidden" for="name">Как вас зовут</label>
-        <input type="email" class="feedback_email input_field" name="email" placeholder="Ваша почта для ответа?">
-        <label class="input_field_label visually-hidden" for="email">Ваша почта для ответа?</label>
-        <textarea class="feedback_text input_field" rows="4" placeholder="Напишите что-нибудь..."></textarea>
-        <label class="input_field_label visually-hidden">Напишите что-нибудь...</label>
+        <button type="button" class="close"><img src="img/cross-big.svg" width="18" height="17" alt="Закрыть форму связи"></button>
+        <input type="text" name="name" id="name" class="feedback_name input_field" placeholder="Имя Фамилия">
+        <label class="input_field_label visually-hidden" for="name">Имя Фамилия</label>
+        <input type="email" class="feedback_email input_field" name="email" placeholder="email@example.com">
+        <label class="input_field_label visually-hidden" for="email">email@example.com</label>
+        <textarea class="feedback_text input_field" rows="4" placeholder="В свободной форме"></textarea>
+        <label class="input_field_label visually-hidden">В свободной форме</label>
         <button class="button feedback_btn" type="submit">Отправить</button>
       </form>
     </div>
@@ -315,7 +315,7 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39"
               alt="HTML academy"></a>
         </p>
-        <p>Сделано в <a class="link" href="https://htmlacademy.ru">HTML academy </a>&copy; 2019
+        <p>Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML academy </a>&copy; 2019
         </p>
       </div>
     </footer>
