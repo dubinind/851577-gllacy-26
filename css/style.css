@@ -41,7 +41,7 @@ img {
 
 .login_dialog .input_field:hover {
   border: 2px solid #c7c6c5;
-  padding: 20px 12px;
+  padding: 0 12px;
 }
 
 
@@ -454,6 +454,12 @@ position: absolute;
   border-radius: 5px;
   top: 37px;
   right: 0;
+  padding: 20px 15px;
+  z-index: 2;
+}
+
+.search_dialog:hover {
+  display: block;
 }
 
 .search_dialog::before {
@@ -466,13 +472,18 @@ position: absolute;
   top: -10px;
 }
 
-.search {
-  width: 281px;
-  height: 42px;
-  margin: 20px 15px;
+.search_dialog .input_field {
+  width: 311px;
+  height: 44px;
   font-size: 14px;
   line-height: 24px;
+  padding: 0 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+.search_dialog .input_field:hover {
+  padding: 0 12px;
 }
 
 .btn_search:hover~.search_dialog,
@@ -513,6 +524,19 @@ position: absolute;
 
 .btn_cart:hover~.basket-list,
 .basket-list:hover {
+  display: block;
+}
+
+.basket-list::before {
+  content: "  ";
+  display: block;
+  height: 15px;
+  width: 150px;
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+.basket-list td {
   display: block;
 }
 
@@ -658,6 +682,7 @@ position: absolute;
   line-height: 24px;
   width: 100px;
   padding: 11px 22px;
+  margin-right: auto;
 }
 
 .btn_enter:hover {
@@ -669,18 +694,13 @@ position: absolute;
 }
 
 .login_dialog .input_field {
-  width: 240px;
-  height: 42px;
+  width: 242px;
+  height: 44px;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 24px;
-  padding: 20px 13px 22px 13px;
+  padding: 0 13px;
 }
-
-.login_dialog .input_field:hover {
-  padding: 19px 12px 21px 12px;
-}
-
 
 
 .basket-list {
@@ -696,6 +716,7 @@ position: absolute;
   color: #323232;
   padding: 12px 13px 19px 15px;
   background-color: #f8f7f4;
+  box-sizing: border-box;
 }
 .cart_row {
   font-size: 13px;
@@ -1041,7 +1062,9 @@ position: absolute;
   -ms-flex-pack: distribute;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .news p,
@@ -1104,9 +1127,15 @@ position: absolute;
 }
 
 .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 560px;
   min-height: 208px;
   background-image: url("../img/pattern.png");
@@ -1581,7 +1610,7 @@ footer a {
   justify-content: space-between;
   margin-left: 0;
   margin-right: auto;
-  margin-top: 6px;
+  margin-top: 36px;
   width: 185px;
 }
 
@@ -1612,7 +1641,7 @@ footer a {
   justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 27px;
 }
 
@@ -1624,8 +1653,8 @@ footer a {
 .post::before {
   display: block;
   content: "";
-  width: 49px;
-  height: 49px;
+  width: 15px;
+  height: 13px;
   background-image: url("../img/heart.png");
   background-repeat: no-repeat;
   position: absolute;
@@ -1681,20 +1710,29 @@ footer a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  align-items: flex-start;
   color: #fefefe;
-  margin-top: 17px;
+  margin-top: 19px;
   margin-left: auto;
 }
 
 .copyright img {
   margin-left: 1px;
-  margin-bottom: -1px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.copyright a {
+  
+  margin: 0;
+  padding: 0;
 }
 
 .copyright p {
   font-size: 12px;
   line-height: 18px;
-  margin-top: -11px;
+  margin: 0;
+  padding: 0;
 }
 
 .site-wrapper {
@@ -1972,6 +2010,7 @@ option {
   line-height: 18px;
   cursor: pointer;
   position: relative;
+  display: block;
 }
 
 .sort_input::-ms-expand {
@@ -2031,7 +2070,7 @@ option {
   padding-left: 3px;
 }
 
-.filter-input-radio+label::before:disabled, .filter-input-radio+label::before:disabled {
+.filter-input-radio+label:disabled::before, .filter-input-radio+label:disabled::before {
   opacity: 0.4;
 }
 
@@ -2058,7 +2097,7 @@ option {
   content: "";
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 14px;
   width: 26px;
   height: 26px;
   background-image: url("../img/radio-on.svg");
@@ -2118,6 +2157,8 @@ option {
   -ms-user-select: none;
   user-select: none;
 }
+
+
 
 .filter-input-checkbox+label::before {
   content: "";
