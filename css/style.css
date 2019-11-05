@@ -44,6 +44,10 @@ img {
   padding: 0 12px;
 }
 
+.login_dialog .input_field:focus {
+  border: 2px solid  #8fbdec;
+  padding: 0 12px;
+}
 
 .input_field {
   padding: 0 14px;
@@ -209,6 +213,8 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
   border-radius: 5px;
+  -webkit-box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+          box-shadow: 0 20px 20px rgba(0,0,0,0.4);
 }
 
 .subcatalog::before {
@@ -460,6 +466,8 @@ img {
   right: 0;
   padding: 20px 15px;
   z-index: 2;
+  -webkit-box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+          box-shadow: 0 20px 20px rgba(0,0,0,0.4);
 }
 
 .search_dialog:hover {
@@ -487,6 +495,10 @@ img {
 }
 
 .search_dialog .input_field:hover {
+  padding: 0 12px;
+}
+
+.search_dialog .input_field:focus {
   padding: 0 12px;
 }
 
@@ -720,7 +732,10 @@ img {
   background-color: #f8f7f4;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+          box-shadow: 0 20px 20px rgba(0,0,0,0.4);
 }
+
 
 .cart_row {
   font-size: 13px;
@@ -1012,7 +1027,7 @@ img {
   font-size: 16px;
   line-height: 22px;
   margin-left: 57px;
-  margin: 0 0 24px 57px;
+  margin: 0 0 22px 57px;
 }
 
 .advantage:nth-child(2n+1) {
@@ -1165,6 +1180,10 @@ img {
 }
 
 .insubscribe .input_field:hover {
+  padding: 0 12px;
+}
+
+.insubscribe .input_field:focus {
   padding: 0 12px;
 }
 
@@ -1385,6 +1404,8 @@ h3 {
   background-color: #f8f7f4;
   border-radius: 10px;
   display: none;
+  -webkit-box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+          box-shadow: 0 20px 20px rgba(0,0,0,0.4);
 }
 
 .feedback form {
@@ -1824,6 +1845,10 @@ h3 {
   background-color: #b2c1b7;
 }
 
+.slider-controls label:active {
+  background-color: #ffffff;
+}
+
 #product-1:checked~.site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/icecream-1.png");
@@ -2028,11 +2053,11 @@ h3 {
   padding-left: 3px;
 }
 
-.filter-input-radio+label:disabled::before {
+.filter-input-radio:disabled+label::before {
   opacity: 0.4;
 }
 
-.filter-input-checkbox+label:disabled::before {
+.filter-input-checkbox:disabled+label::before {
   opacity: 0.4;
 }
 
@@ -2068,8 +2093,8 @@ h3 {
   opacity: 0.8;
 }
 
-.filter-input-radio:checked:hover+label::before,
-.filter-input-radio:hover+label::before,
+.filter-input-radio:checked:hover:not(:disabled)+label::before,
+.filter-input-radio:hover:not(:disabled)+label::before,
 .filter-input-radio:checked:focus+label::before,
 .filter-input-radio:focus+label::before {
   opacity: 1;
@@ -2145,8 +2170,8 @@ h3 {
   opacity: 0.8;
 }
 
-.filter-input-checkbox:hover+label::before,
-.filter-input-checkbox:checked:hover+label::before,
+.filter-input-checkbox:hover:not(:disabled)+label::before,
+.filter-input-checkbox:checked:hover:not(:disabled)+label::before,
 .filter-input-checkbox:focus+label::before,
 .filter-input-checkbox:checked:focus+label::before {
   opacity: 1;
